@@ -1,0 +1,21 @@
+<!-- Right now this script requires a local server host
+      I've been using 'python -m http.server' to start one,
+      which has been hosting on HTTP port 8000 -->
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="skull-obj" src="src/Cranium.obj"></a-asset-item>
+      </a-assets>
+      
+      <a-sky color="#ADD8E6"></a-sky>
+      
+      <a-entity obj-model="obj: #skull-obj" position="0, 1, -2" scale="8, 8, 8"
+                scale="5, 5, 5"></a-entity>
+      
+    </a-scene>
+  </body>
+</html>
